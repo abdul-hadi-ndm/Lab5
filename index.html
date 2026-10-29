@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Abdul Hadi — Computer Science Student &amp; Sales Professional</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container-highest": "#353534",
+            "surface-container": "#201f1f",
+            "secondary-fixed-dim": "#7bd0ff",
+            "inverse-primary": "#5d5f5f",
+            "surface-tint": "#c6c6c7",
+            "secondary": "#7bd0ff",
+            "tertiary": "#ffffff",
+            "outline-variant": "#444748",
+            "on-background": "#e5e2e1",
+            "primary-fixed-dim": "#c6c6c7",
+            "tertiary-fixed-dim": "#c6c6cf",
+            "background": "#131313",
+            "surface-dim": "#131313",
+            "error-container": "#93000a",
+            "on-error-container": "#ffdad6",
+            "primary-container": "#e2e2e2",
+            "surface-container-lowest": "#0e0e0e",
+            "surface-container-high": "#2a2a2a",
+            "on-surface-variant": "#c4c7c8",
+            "tertiary-container": "#e2e1eb",
+            "on-tertiary-fixed-variant": "#45464e",
+            "tertiary-fixed": "#e2e1eb",
+            "on-secondary-fixed-variant": "#004c69",
+            "tertiary-fixed": "#e2e1eb",
+            "on-tertiary-fixed": "#1a1b22",
+            "primary-fixed": "#e2e2e2",
+            "on-tertiary-container": "#63646c",
+            "on-secondary-container": "#00374d",
+            "secondary-container": "#00a6e0",
+            "on-tertiary": "#2f3037",
+            "surface": "#131313",
+            "inverse-surface": "#e5e2e1",
+            "on-secondary-fixed": "#001e2c",
+            "outline": "#8e9192",
+            "on-primary-fixed": "#1a1c1c",
+            "surface-bright": "#3a3939",
+            "surface-container-low": "#1c1b1b",
+            "on-primary-container": "#636565",
+            "surface-variant": "#353534",
+            "error": "#ffb4ab",
+            "on-primary": "#2f3131",
+            "inverse-on-surface": "#313030",
+            "secondary-fixed": "#c4e7ff",
+            "on-primary-fixed-variant": "#454747",
+            "on-secondary": "#00354a",
+            "primary": "#ffffff",
+            "on-surface": "#e5e2e1",
+            "on-error": "#690005"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter": "1rem",
+            "space-xl": "2.25rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "gutter-lg": "1.25rem",
+            "margin": "1.25rem",
+            "margin-lg": "4rem",
+            "margin-md": "2rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Geist"],
+            "display-hero-mobile": ["Geist"],
+            "display-hero": ["Geist"],
+            "body-md": ["Geist"],
+            "headline-lg-mobile": ["Geist"],
+            "code-md": ["JetBrains Mono"],
+            "body-lg": ["Geist"],
+            "headline-md": ["Geist"],
+            "label-sm": ["JetBrains Mono"],
+            "headline-sm": ["Geist"],
+            "body-sm": ["Geist"]
+          },
+          "fontSize": {
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.04em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "code-md": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "500" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .bento-card {
+      background-color: #161616;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1.5rem;
+      transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bento-card:hover {
+      background-color: #1a1a1a;
+      border-color: rgba(255, 255, 255, 0.20);
+      transform: translateY(-2px);
+      box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    }
+    .status-pulse {
+      box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4);
+      animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse-ring {
+      0% {
+        box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6);
+      }
+      70% {
+        box-shadow: 0 0 0 8px rgba(52, 211, 153, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(52, 211, 153, 0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-surface antialiased min-h-screen flex flex-col selection:bg-surface-container-highest selection:text-primary">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full border-b border-outline-variant/30 bg-surface/80 dark:bg-surface/80 backdrop-blur-md shadow-none">
+<div class="flex justify-between items-center w-full max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-space-md">
+<!-- Brand Logo / Wordmark -->
+<div class="flex items-center gap-space-sm">
+<a class="text-headline-sm font-headline-sm font-bold tracking-tight text-primary dark:text-primary transition-all duration-200 ease-out active:scale-95" href="#about">
+          ABDUL HADI
+        </a>
+<span class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm text-outline border border-outline-variant/30 bg-surface-container/60 ml-2">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-400 status-pulse"></span>
+          AVAILABLE
+        </span>
+</div>
+<!-- Navigation Links & Actions -->
+<div class="flex items-center gap-space-lg">
+<nav class="hidden md:flex items-center gap-space-lg">
+<a class="text-code-md font-code-md text-primary dark:text-primary font-medium tracking-wider transition-colors duration-200" href="#about">
+            ABOUT
+          </a>
+<a class="text-code-md font-code-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary tracking-wider transition-colors duration-200" href="#work">
+            EXPERIENCE
+          </a>
+<a class="text-code-md font-code-md text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary tracking-wider transition-colors duration-200" href="#contact">
+            CONTACT
+          </a>
+</nav>
+<!-- Primary Action CTA -->
+<a class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg text-code-md font-code-md font-medium bg-primary text-surface-container-lowest hover:bg-opacity-90 transition-all duration-200 active:scale-95" href="mailto:abdulhadi71917@hotmail.com">
+<span>CONTACT</span>
+<span class="material-symbols-outlined text-sm leading-none" data-icon="arrow_outward">arrow_outward</span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Canvas Container -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-space-xl">
+<!-- Primary 3-Column Asymmetric Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg">
+<!-- 1. Top-Left Card: Imposing Hero Title & Role -->
+<section class="bento-card lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col justify-between" id="about">
+<div>
+<!-- Live Status Tag -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high/60 border border-outline-variant/30 mb-space-lg">
+<span class="w-2 h-2 rounded-full bg-emerald-400 status-pulse"></span>
+<span class="text-label-sm font-label-sm text-outline tracking-wider">BSCS STUDENT @ QARSHI UNIVERSITY</span>
+</div>
+<!-- High-Impact Name Header -->
+<h1 class="text-display-hero-mobile lg:text-display-hero font-display-hero font-bold text-primary tracking-tighter mb-space-sm leading-none">
+          ABDUL<br/>HADI
+        </h1>
+<!-- Role & Discipline -->
+<p class="text-headline-sm font-headline-sm text-on-surface-variant font-medium mt-space-sm mb-space-md">
+          Computer Science Student &amp; Sales Associate
+        </p>
+<p class="text-body-md font-body-md text-outline leading-relaxed max-w-md">
+          To be a part of a professional team where I can utilize my knowledge to contribute benefit for the company in the long term and to further enhance my professional skills.
+        </p>
+</div>
+<!-- Quick Numerical Credentials -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-xl mt-space-xl border-t border-outline-variant/20">
+<div>
+<div class="text-headline-md font-headline-md text-primary font-semibold">3+</div>
+<div class="text-label-sm font-label-sm text-outline mt-0.5">YEARS SALES EXP</div>
+</div>
+<div>
+<div class="text-headline-md font-headline-md text-primary font-semibold">BSCS</div>
+<div class="text-label-sm font-label-sm text-outline mt-0.5">PURSUING</div>
+</div>
+<div>
+<div class="text-headline-md font-headline-md text-primary font-semibold">2</div>
+<div class="text-label-sm font-label-sm text-outline mt-0.5">LANGUAGES</div>
+</div>
+</div>
+</section>
+<!-- 2. Center Card: Executive Portrait -->
+<section class="bento-card lg:col-span-3 p-2 relative flex flex-col overflow-hidden group">
+<div class="relative w-full h-full min-h-[380px] lg:min-h-[460px] rounded-[1.25rem] overflow-hidden bg-surface-container">
+<img alt="Abdul Hadi" class="w-full h-full object-cover object-top filter grayscale contrast-105 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out" src="IMG_0552.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-transparent"></div>
+<!-- Bottom Metadata Overlay -->
+<div class="absolute bottom-0 inset-x-0 p-space-md flex items-end justify-between">
+<div>
+<span class="text-label-sm font-label-sm text-primary tracking-widest block font-semibold">LAHORE, PAKISTAN</span>
+<span class="text-body-sm font-body-sm text-outline">Qarshi University</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container/80 backdrop-blur-md border border-outline-variant/40 flex items-center justify-center text-primary group-hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-sm" data-icon="location_on">location_on</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Right Tall Card: Experience & Education Timeline -->
+<section class="bento-card lg:col-span-4 p-space-lg lg:p-space-xl flex flex-col justify-between" id="work">
+<div>
+<!-- Card Header -->
+<div class="flex items-center justify-between pb-space-md border-b border-outline-variant/20 mb-space-lg">
+<h2 class="text-code-md font-code-md text-primary tracking-widest font-semibold">EXPERIENCE &amp; EDUCATION</h2>
+<span class="text-label-sm font-label-sm text-outline">2019 — PRESENT</span>
+</div>
+<!-- Chronological Timeline List -->
+<div class="relative pl-5 space-y-space-lg">
+<!-- Continuous Hairline Vertical Track -->
+<div class="absolute left-1.5 top-2.5 bottom-2 w-px bg-outline-variant/30"></div>
+<!-- Role 1: Current Education -->
+<div class="relative group">
+<div class="absolute -left-5 top-1.5 w-3 h-3 rounded-full bg-surface-container-highest border-2 border-primary flex items-center justify-center">
+<span class="w-1 h-1 rounded-full bg-primary"></span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-primary font-semibold group-hover:text-secondary-fixed-dim transition-colors">
+                  BS Computer Science
+                </h3>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-outline mt-0.5 mb-1.5">
+<span class="italic text-on-surface-variant font-medium">Qarshi University</span>
+<span>•</span>
+<span>Currently Pursuing</span>
+</div>
+<p class="text-body-sm font-body-sm text-outline leading-relaxed">
+                  Focusing on software development fundamentals, analytical thinking, and core programming concepts.
+                </p>
+</div>
+</div>
+<!-- Role 2: Work Experience -->
+<div class="relative group">
+<div class="absolute -left-5 top-1.5 w-3 h-3 rounded-full bg-surface-container-highest border border-outline-variant flex items-center justify-center">
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-primary font-semibold group-hover:text-secondary-fixed-dim transition-colors">
+                  Sales Associate
+                </h3>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-outline mt-0.5 mb-1.5">
+<span class="italic text-on-surface-variant font-medium">Real Estate Industry</span>
+<span>•</span>
+<span>3 Years</span>
+</div>
+<p class="text-body-sm font-body-sm text-outline leading-relaxed">
+                  Managed sales-related responsibilities, client communications, requirement analysis, and property consultations.
+                </p>
+</div>
+</div>
+<!-- Role 3: Matric & Intermediate -->
+<div class="relative group">
+<div class="absolute -left-5 top-1.5 w-3 h-3 rounded-full bg-surface-container-highest border border-outline-variant flex items-center justify-center">
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-primary font-semibold group-hover:text-secondary-fixed-dim transition-colors">
+                  Matriculation &amp; Intermediate
+                </h3>
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-outline mt-0.5 mb-1.5">
+<span class="italic text-on-surface-variant font-medium">BISE Lahore</span>
+<span>•</span>
+<span>2019 – 2023</span>
+</div>
+<p class="text-body-sm font-body-sm text-outline leading-relaxed">
+                  Completed matriculation (2019–2021) and intermediate (2021–2023) under the Board of Intermediate and Secondary Education, Lahore.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex justify-between items-center">
+<span class="text-label-sm font-label-sm text-outline">VERIFIED RESUME RECORD</span>
+<span class="material-symbols-outlined text-sm text-outline" data-icon="verified">verified</span>
+</div>
+</section>
+<!-- 4. Bottom-Left Card: Bio & Skill Matrix -->
+<section class="bento-card lg:col-span-7 p-space-lg lg:p-space-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/20 mb-space-md">
+<h2 class="text-code-md font-code-md text-primary tracking-widest font-semibold">SKILLS &amp; CAPABILITIES</h2>
+<span class="text-label-sm font-label-sm text-outline">COMPETENCIES</span>
+</div>
+<p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed mb-space-lg">
+          Combining technical software development foundations in C++, Java, and JavaScript with proven client management, negotiation, and communication skills.
+        </p>
+<!-- Technical & Professional Skill Badges -->
+<div>
+<div class="text-label-sm font-label-sm text-outline tracking-wider mb-2.5">CORE COMPETENCIES</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-colors">
+                C++
+              </span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-colors">
+                Java
+              </span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-colors">
+                JavaScript (JS)
+              </span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-colors">
+                Software Development
+              </span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-colors">
+                Problem-Solving
+              </span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-colors">
+                Sales &amp; Client Management
+              </span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-colors">
+                Negotiation &amp; Persuasion
+              </span>
+<span class="px-3 py-1 rounded-full text-label-sm font-label-sm text-on-surface bg-surface-container border border-outline-variant/30 hover:border-primary/40 transition-colors">
+                Business Communication
+              </span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-outline-variant/20 flex items-center justify-between text-label-sm font-label-sm text-outline">
+<span>HOBBIES: READING, BADMINTON, CRICKET, SNOOKER, PADEL TENNIS</span>
+<span>LANGUAGES: URDU &amp; ENGLISH</span>
+</div>
+</section>
+<!-- 5. Bottom-Center Card: Interactive Contact Module -->
+<section class="bento-card lg:col-span-5 p-space-lg lg:p-space-xl flex flex-col justify-between group" id="contact">
+<div class="flex items-start justify-between">
+<div>
+<span class="text-label-sm font-label-sm text-secondary-fixed-dim tracking-widest font-semibold block mb-1">DIRECT INQUIRIES</span>
+<h2 class="text-headline-lg font-headline-lg text-primary tracking-tight font-bold">
+              Wanna get in touch?
+            </h2>
+</div>
+<!-- Diagonal CTA Arrow -->
+<a aria-label="Send Email" class="w-12 h-12 rounded-xl bg-surface-container-high border border-outline-variant/40 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface-container-lowest group-hover:scale-105 transition-all duration-200" href="mailto:abdulhadi71917@hotmail.com">
+<span class="material-symbols-outlined text-2xl" data-icon="arrow_outward">arrow_outward</span>
+</a>
+</div>
+<p class="text-body-md font-body-md text-outline my-space-md">
+          Feel free to reach out via phone or email for collaborations, computer science opportunities, or professional inquiries.
+        </p>
+<!-- Direct Email & Phone Section -->
+<div class="pt-space-sm space-y-2">
+<a class="inline-flex items-center justify-between w-full p-3.5 rounded-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all duration-200" href="mailto:abdulhadi71917@hotmail.com">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-lg" data-icon="mail">mail</span>
+<span class="text-code-md font-code-md text-primary font-medium tracking-wide">abdulhadi71917@hotmail.com</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline group-hover:text-primary transition-colors">EMAIL</span>
+</a>
+<a class="inline-flex items-center justify-between w-full p-3.5 rounded-xl bg-surface-container border border-outline-variant/30 hover:border-primary/50 transition-all duration-200" href="tel:+923304242591">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-outline text-lg" data-icon="call">call</span>
+<span class="text-code-md font-code-md text-primary font-medium tracking-wide">+92 330 4242591</span>
+</div>
+<span class="text-label-sm font-label-sm text-outline group-hover:text-primary transition-colors">CALL</span>
+</a>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant/20 bg-surface-container-lowest dark:bg-surface-container-lowest">
+<div class="flex flex-col md:flex-row justify-between items-center gap-space-md w-full max-w-7xl mx-auto px-margin md:px-margin-md lg:px-margin-lg py-space-xl">
+<!-- Copyright Note -->
+<div class="text-body-sm font-body-sm text-outline dark:text-outline text-center md:text-left">
+        © 2026 Abdul Hadi. All rights reserved.
+      </div>
+<!-- Outbound Contact Links -->
+<div class="flex items-center gap-space-lg">
+<a class="text-code-md font-code-md text-outline dark:text-outline hover:text-primary dark:hover:text-primary tracking-wider transition-colors duration-200" href="mailto:abdulhadi71917@hotmail.com">
+          EMAIL
+        </a>
+<a class="text-code-md font-code-md text-outline dark:text-outline hover:text-primary dark:hover:text-primary tracking-wider transition-colors duration-200" href="tel:+923304242591">
+          PHONE
+        </a>
+</div>
+</div>
+</footer>
+</body>
+</html>
